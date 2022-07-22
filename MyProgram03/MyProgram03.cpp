@@ -5,30 +5,22 @@ using namespace std;
 
 int main()
 {
-    // nested loops
+    // printf()
 
-    char symbol;
-    int width;
-    int height;
+    string make = "Ford";
+    string model = "Mustang";
 
-    cout << "Enter the symbol to use: ";
-    cin >> symbol;
+    int year = 2022;
+    double price = 999.000;
 
-    cout << "Enter the width: ";
-    cin >> width;
+    char for_sale = 'Y';
 
-    cout << "Enter the height: ";
-    cin >> height;
+    printf("Your car is made by: %s", make.c_str()); cout << endl;
+    printf("Your car is a: %s %s", make.c_str(), model.c_str()); cout << endl;
 
-    for (int i = 0; i < width; i++) 
-    {
-        for (int j = 0; j < height; j++)
-        {
-            cout << symbol;
-        }
-
-        cout << endl;
-    }
+    printf("The year is: %d", year); cout << endl;
+    printf("The price is: %.2f", price); cout << endl;
+    printf("Is it for sale: %c", for_sale); cout << endl;
 
     cout << endl;
     return 0;
