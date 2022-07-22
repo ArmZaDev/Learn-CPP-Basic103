@@ -3,13 +3,20 @@ using namespace std;
 
 int main()
 {
-    // Lyrics for a song that I enjoy
-    /*
-        These lyrics are actually very good
-        Omae wa mou... shinda iru!
-    */
-    cout << "\"Never gonna give you up\"\n";
-    cout << "Never gonna let you down" << endl;
+    int year = 2020;
+    double price = 999.99;
+
+    char status = 'N';
+    string model = "Mustang";
+
+    bool for_sale = true;
+
+
+    cout << "Year: " << year << endl;
+    cout << "Price: " << price << endl;
+    cout << "New/Used: " << status << endl;
+    cout << "Model: " << model << endl;
+    cout << "Availability: " << for_sale << endl;
 
     return 0;
 }
