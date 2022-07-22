@@ -3,25 +3,30 @@
 #include <algorithm>
 using namespace std;
 
+double add(double num1, double num2);
+
 int main()
 {
-    // printf()
+    // functions
 
-    string make = "Ford";
-    string model = "Mustang";
+    double number1, number2;
 
-    int year = 2022;
-    double price = 999.000;
+    cout << "Enter in #1 : ";
+    cin >> number1;
+    cout << "Enter in #2 : ";
+    cin >> number2;
 
-    char for_sale = 'Y';
+    double result = add(number1, number2);
 
-    printf("Your car is made by: %s", make.c_str()); cout << endl;
-    printf("Your car is a: %s %s", make.c_str(), model.c_str()); cout << endl;
-
-    printf("The year is: %d", year); cout << endl;
-    printf("The price is: %.2f", price); cout << endl;
-    printf("Is it for sale: %c", for_sale); cout << endl;
+    cout << "Your result is: " << result << endl;
+    //cout << add(number1, number2);
 
     cout << endl;
     return 0;
+}
+
+double add(double num1, double num2) {
+    double result = num1 + num2;
+    return result;
+    //return num1 + num2;
 }
