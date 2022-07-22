@@ -5,26 +5,30 @@ using namespace std;
 
 int main()
 {
-    // for loops
+    // nested loops
 
-    string word;
+    char symbol;
+    int width;
+    int height;
 
-    cout << "Enter the word to spell: ";
-    cin >> word;
+    cout << "Enter the symbol to use: ";
+    cin >> symbol;
 
-    for (int i = 0; i < word.length(); i++) { 
-        cout << word.at(i) << " ";
+    cout << "Enter the width: ";
+    cin >> width;
+
+    cout << "Enter the height: ";
+    cin >> height;
+
+    for (int i = 0; i < width; i++) 
+    {
+        for (int j = 0; j < height; j++)
+        {
+            cout << symbol;
+        }
+
+        cout << endl;
     }
-
-
-    /*for (int i = 1; i <= 5; i++) {
-        cout << i << endl;
-    }
-
-    for (int i = 5; i >= 1; i--) {
-        cout << i << endl;
-    }*/
-    
 
     cout << endl;
     return 0;
