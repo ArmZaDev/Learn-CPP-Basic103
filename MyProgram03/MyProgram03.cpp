@@ -1,117 +1,95 @@
 ﻿#include <iostream>
 #include <string>
+#include <algorithm>
 using namespace std;
 
 int main()
 {
-    // string.length() returns length of a string
-    
-    string first_name;
+    double x, y;
 
-    cout << "Enter your first name: ";
-    getline(cin, first_name);
+    cout << "This program will enter the max/min of two numbers" << endl;
 
-    //int length = first_name.length();
-    if (first_name.length() >= 12) {
-        cout << "Your name can't be over 12 characters long";
-    }
-    else {
-        cout << "Welcome " << first_name;
-    }
+    cout << "Enter in number 1: ";
+    cin >> x;
 
+    cout << "Enter in number 2: ";
+    cin >> y;
 
-    // string.empty() returns true if empty
-    if (first_name.empty()) {
-        cout << "You didn't enter a name! >:(";
-    }
-    else {
-        cout << "Welcome " << first_name;
-    }
+    double z = max(x, y);
+    cout << "Max = " << z;
+    z = min(x, y);
+    cout << "Min = " << z;
 
     /*
-    // string.clear() clears a string
-    string first_name;
-    cout << "Enter your first name: ";
-    getline(cin, first_name);
+    double x, y;
 
-    cout << "welcome " << first_name << endl;
-    cout << "Your name has been cleared*" << endl;
+    cout << "This program will return x ^ y" << endl;
 
-    first_name.clear();
-    cout << "Welcome " << first_name << endl;
+    cout << "Enter in number 1: ";
+    cin >> x;
+
+    cout << "Enter in number 2: ";
+    cin >> y;
+
+    double z = pow(x, y);
+    cout << z;
     */
     /*
-    // string1.append(string2) appends a string
-    string user_name;
+    double x;
 
-    cout << "Enter your username: ";
-    getline(cin, user_name);
+    cout << "This program will return square root of a #" << endl;
 
-    string email = user_name.append("@gmail.com");
-    cout << "You email is now: " << email << endl;
+    cout << "Enter in number: ";
+    cin >> x;
+
+    double z = sqrt(x);
+    cout << z;
     */
     /*
-    // string1.at(x) returns a character at a given index
-    string first_name;
-    string middle_name;
-    string last_name;
+    double x;
 
-    cout << "Enter your first name: ";
-    getline(cin, first_name);
-    cout << "Enter your middle name: ";
-    getline(cin, middle_name);
-    cout << "Enter your last name: ";
-    getline(cin, last_name);
+    cout << "This program will return the absolute value of a #" << endl;
 
-    char letter1 = first_name.at(0);
-    char letter2 = middle_name.at(0);
-    char letter3 = last_name.at(0);
-    cout << "You initials are: " << letter1 << letter2 << letter3;
+    cout << "Enter in number: ";
+    cin >> x;
+
+    double z = abs(x); // -42 = abs 42
+    cout << z;
     */
     /*
-    // string1.substr(int x, int y) retieve a portion of
-    string first_name;
+    double x;
 
-    cout << "Enter your first name: ";
-    getline(cin, first_name);
+    cout << "This program will round a number to the nearest whole integer" << endl;
 
-    string nickname = first_name.substr(0, 3); //เริ่มที่ 0 ถึง 3
+    cout << "Enter in number: ";
+    cin >> x;
 
-    cout << "Your nickname is " << nickname << endl;
-    cout << "Hello " << nickname;
+    double z = round(x);
+    cout << z;
     */
     /*
-    // string1.isert(int x, string2); Insert a string with
-    string user_name;
-    cout << "Enter your user_name: ";
-    getline(cin, user_name);
+    double x;
 
-    user_name.insert(0, "@"); //@xxxx
-    cout << "reply: " << user_name;
+    cout << "This program will round a numvber UP" << endl;
+
+    cout << "Enter in number: ";
+    cin >> x;
+
+    double z = ceil(x);
+    cout << z;
     */
     /*
-    // string1.find(string2); returns index of string2
-    string first_name;
-    cout << "Enter your first name: ";
-    getline(cin, first_name);
+    double x;
 
-    string substring;
-    cout << "Search for which character/s?: ";
-    getline(cin, substring);
+    cout << "This program will round a numvber DOWN" << endl;
 
-    int position = first_name.find(substring);
-    cout << "Found character/s at position: " << position;
+    cout << "Enter in number: ";
+    cin >> x;
+
+    double z = floor(x);
+    cout << z;
     */
-    /*
-    //string1.erase(x,y) erases portion of a string
-    
-    string phone_number;
-    cout << "Enter your phone number: ";
-    getline(cin, phone_number);
 
-    phone_number.erase(0, 4);
-    cout << "phone number: " << phone_number;
-    */
 
     cout << endl;
     return 0;
