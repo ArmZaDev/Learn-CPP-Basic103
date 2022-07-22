@@ -3,38 +3,35 @@ using namespace std;
 
 int main()
 {
-    //addition +
-        // ex. cout << 5 + 2; (result = 7)
-        
-    //subtraction -
-        // ex. cout << 5 - 2; (result = 3)
-        
-    //multiplication *
-        // ex. cout << 5 * 2; (result = 10)
-        
-    //division /
-        // ex. cout << 5 / 2; (result = 2.5)
-        
-    //modulus %
-        // ex.cout << 5 % 2; (result = 1)
+    int temperature;
+
+    cout << "Please enter the temperature (C): ";
+    cin >> temperature;
+
+    if (temperature >= 30) {
+        cout << "It is HOT outside ,:/";
+    }
+    else if (temperature <= 0) {
+        cout << "It is COLD outside *brrrrr*";
+    }
+    else {
+        cout << "It is warm outside :)";
+    }
+
+
     /*
-    int total = 1;
+    int age = 12;
 
-    total += 3;
-
-    cout << total << endl;
-    //cout << (double) 5 / 2;
-    cout << (int) (5.051 / 2.021);
+    if (age >= 18) 
+    {
+        cout << "cograts! You are an adult";
+    }
+    else 
+    {
+        cout << "You are not an adult!";
+    }
+    cout << endl;
     */
-
-    //Programming equathesis ex.(1+2+3)
-    //-----------------------------------
-    //step #1 Parrenthesis ( )
-    //step #2 multiply * & divide /
-    //step #3 add + & substract -
-
-    double total = 1 + 2 - 3 * 4 / 5.0 + (6 + 7); //total = 13.6
-    cout << total << endl;
 
     return 0;
 }
