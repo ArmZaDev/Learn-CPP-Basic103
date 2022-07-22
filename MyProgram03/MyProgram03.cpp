@@ -5,31 +5,26 @@ using namespace std;
 
 int main()
 {
-    /*
-    // while loops
+    // for loops
 
-    string name;
+    string word;
 
-    while (name.empty()) {
-        cout << "Please enter your name: ";
-        getline(cin, name);
+    cout << "Enter the word to spell: ";
+    cin >> word;
+
+    for (int i = 0; i < word.length(); i++) { 
+        cout << word.at(i) << " ";
     }
-    cout << "Welcome " << name;
-*/
 
-    //do-whlie loops
 
-    string answer;
+    /*for (int i = 1; i <= 5; i++) {
+        cout << i << endl;
+    }
 
-    do {
-        cout << "You are playing THE GAME" << endl;
-        cout << "* pew pew *";
-        cout << "Press q to quit!" << endl;
-        getline(cin, answer);
-        cout << "***************************" << endl;
-    } while (answer.at(0) != 'q' && answer.at(0) != 'Q');
-
-    cout << "You have quit the game (:" << endl;
+    for (int i = 5; i >= 1; i--) {
+        cout << i << endl;
+    }*/
+    
 
     cout << endl;
     return 0;
