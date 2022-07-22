@@ -5,91 +5,47 @@ using namespace std;
 
 int main()
 {
-    double x, y;
+    // && AND logical operator
+    // || OR logical operator
+    // ! NOT logical operator
 
-    cout << "This program will enter the max/min of two numbers" << endl;
+    double temp;
 
-    cout << "Enter in number 1: ";
-    cin >> x;
+    cout << "Enter your temperature (C): ";
+    cin >> temp;
 
-    cout << "Enter in number 2: ";
-    cin >> y;
-
-    double z = max(x, y);
-    cout << "Max = " << z;
-    z = min(x, y);
-    cout << "Min = " << z;
+    if (temp >= 35 && temp <= 37.5) {
+        cout << "Your temperature is normal";
+    }
+    else {
+        cout<<"GO TO THE HOSTPITAL";
+    }
 
     /*
-    double x, y;
+    string cough;
 
-    cout << "This program will return x ^ y" << endl;
+    cout << "Do you have a cough (yes/no): ";
+    cin >> cough;
 
-    cout << "Enter in number 1: ";
-    cin >> x;
-
-    cout << "Enter in number 2: ";
-    cin >> y;
-
-    double z = pow(x, y);
-    cout << z;
+    if (cough.at(0) == 'y' || cough.at(0) == 'Y') {
+        cout << "You are sick!";
+    }
+    else {
+        cout << "You are probably fine";
+    }
     */
     /*
-    double x;
+    string name;
 
-    cout << "This program will return square root of a #" << endl;
+    cout << "Enter your name: ";
+    getline(cin, name);
 
-    cout << "Enter in number: ";
-    cin >> x;
-
-    double z = sqrt(x);
-    cout << z;
-    */
-    /*
-    double x;
-
-    cout << "This program will return the absolute value of a #" << endl;
-
-    cout << "Enter in number: ";
-    cin >> x;
-
-    double z = abs(x); // -42 = abs 42
-    cout << z;
-    */
-    /*
-    double x;
-
-    cout << "This program will round a number to the nearest whole integer" << endl;
-
-    cout << "Enter in number: ";
-    cin >> x;
-
-    double z = round(x);
-    cout << z;
-    */
-    /*
-    double x;
-
-    cout << "This program will round a numvber UP" << endl;
-
-    cout << "Enter in number: ";
-    cin >> x;
-
-    double z = ceil(x);
-    cout << z;
-    */
-    /*
-    double x;
-
-    cout << "This program will round a numvber DOWN" << endl;
-
-    cout << "Enter in number: ";
-    cin >> x;
-
-    double z = floor(x);
-    cout << z;
-    */
-
+    if (!name.empty()) {
+        cout << "Welcome " << name;
+    }
+    else {
+        cout << "YOU DID NOT ENTER YOUR NAME! >:";
+    }*/
 
     cout << endl;
     return 0;
