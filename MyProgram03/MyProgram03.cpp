@@ -1,22 +1,39 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
 {
-    int year = 2020;
-    double price = 999.99;
+    string item;
 
-    char status = 'N';
-    string model = "Mustang";
+    double price;
+    int quantity;
+    double total;
 
-    bool for_sale = true;
+    cout << "What item do you want to buy?: ";
+    getline(cin, item);
+    cout << "What is the price for each? $: ";
+    cin >> price;
+    cout << "How many do you want to buy?: ";
+    cin >> quantity;
+    cout << endl;
 
+    total = price * quantity;
 
-    cout << "Year: " << year << endl;
-    cout << "Price: " << price << endl;
-    cout << "New/Used: " << status << endl;
-    cout << "Model: " << model << endl;
-    cout << "Availability: " << for_sale << endl;
+    cout << "item: " << item << endl;
+    cout << "price: " << price << " $" << endl;
+    cout << "x " << quantity << endl;
+    cout << "You total is: " << total << " $" << endl;
+
+    /*
+    string name;
+
+    cout << "Please enter your name: ";
+    getline(cin, name);
+
+    cout << "Welcome " << name;
+    cout << endl;
+    */
 
     return 0;
 }
