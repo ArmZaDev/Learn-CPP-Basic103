@@ -1,39 +1,40 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main()
 {
-    string item;
-
-    double price;
-    int quantity;
-    double total;
-
-    cout << "What item do you want to buy?: ";
-    getline(cin, item);
-    cout << "What is the price for each? $: ";
-    cin >> price;
-    cout << "How many do you want to buy?: ";
-    cin >> quantity;
-    cout << endl;
-
-    total = price * quantity;
-
-    cout << "item: " << item << endl;
-    cout << "price: " << price << " $" << endl;
-    cout << "x " << quantity << endl;
-    cout << "You total is: " << total << " $" << endl;
-
+    //addition +
+        // ex. cout << 5 + 2; (result = 7)
+        
+    //subtraction -
+        // ex. cout << 5 - 2; (result = 3)
+        
+    //multiplication *
+        // ex. cout << 5 * 2; (result = 10)
+        
+    //division /
+        // ex. cout << 5 / 2; (result = 2.5)
+        
+    //modulus %
+        // ex.cout << 5 % 2; (result = 1)
     /*
-    string name;
+    int total = 1;
 
-    cout << "Please enter your name: ";
-    getline(cin, name);
+    total += 3;
 
-    cout << "Welcome " << name;
-    cout << endl;
+    cout << total << endl;
+    //cout << (double) 5 / 2;
+    cout << (int) (5.051 / 2.021);
     */
+
+    //Programming equathesis ex.(1+2+3)
+    //-----------------------------------
+    //step #1 Parrenthesis ( )
+    //step #2 multiply * & divide /
+    //step #3 add + & substract -
+
+    double total = 1 + 2 - 3 * 4 / 5.0 + (6 + 7); //total = 13.6
+    cout << total << endl;
 
     return 0;
 }
