@@ -5,20 +5,35 @@ using namespace std;
 
 int main()
 {
-    //pointers
-    // & address-of operator
-    // * dereference operator
+    int number;
 
-    string name = "ArmZa";
-    int age = 100;
+    cout << "How many cars do you have?: ";
+    cin >> number;
+    cin.ignore();
 
-    string* pName = &name;
-    int* pAge = &age;
+    //pointer
+    string* pCars = new string[number];
 
-    cout << *pName << endl;
-    cout << *pAge << endl;
+    for (int i = 0; i < number; i++) {
+        cout << "Enter car #" << i + 1 << " ";
+        getline(cin, pCars[i]);
+    }
+
+    cout << "\nHere is your garage!\n";
+    cout << "------------------------\n";
+
+    for (int i = 0; i < number; i++) {
+        cout << "Parking spot #" << i + 1 << " " << pCars[i] << endl;
+    }
+
+
+    /*string cars[] = { "Corvette","Tesla","Ferrari","Audi" };
+
+    for (int i = 0; i < size(cars); i++)
+    {
+        cout << cars[i] << endl;
+    }*/
     
-
     cout << endl;
     return 0;
 }
