@@ -3,36 +3,45 @@
 #include <algorithm>
 using namespace std;
 
-int main()
-{
-    char keyboard[4][10]{
-        { '1','2','3','4','5','6','7','8','9','0'},
-        { 'Q','W','E','R','T','Y','U','I','O','P'},
-        { 'A','S','D','F','G','H','J','K','L',';'},
-        { 'Z','X','C','V','B','N','M',',','.','/'}
-    };
+class Human {
+public:
+    string name;
+    int age;
+    double weight;
 
-    for (int row = 0; row < 4; row++) {
-        for (int column = 0; column < 10; column++) {
-            cout << keyboard[row][column] << " ";
-        }
-        cout << endl;
+    void eat() {
+        cout << this->name << " is eating" << endl;
+    }
+    void drink() {
+        cout << this->name << " is drinking" << endl;
+    }
+    void sleep() {
+        cout << this->name << " is sleping" << endl;
     }
 
+};
 
+int main()
+{
+    Human human1;
+    Human human2;
+    Human human3;
 
-    /*int numbers[3][4] = { 
-                      { 0,1,2,3 },
-                      { 4,5,6,7, },
-                      { 8,9,10,11 } 
-                    };
+    human1.name = "Tommy";
+    human1.age = 35;
 
-    for (int row = 0; row < 3; row++) {
-        for (int column = 0; column < 4; column++) {
-            cout << numbers[row][column] << " ";
-        }
-        cout << endl;
-    }*/
+    human2.name = "Morty";
+    human2.age = 16;
+
+    human3.name = "Jerry";
+    human3.age = 45;
+
+    human1.eat();
+    human2.drink();
+    human3.sleep();
+
+    cout << human1.name << endl;
+    cout << human1.age << endl;
     
     
     cout << endl;
