@@ -3,30 +3,50 @@
 #include <algorithm>
 using namespace std;
 
-double add(double num1, double num2);
+void bakePizza(string bread) {
+
+    cout << "Here is your ";
+    cout << bread << " ";
+    cout << "pizza";
+}
+
+void bakePizza(string bread, string sauce) {
+
+    cout << "Here is your ";
+    cout << bread << " ";
+    cout << sauce << " ";
+    cout << "pizza";
+}
+
+void bakePizza(string bread, string sauce, string cheese) {
+
+    cout << "Here is your ";
+    cout << bread << " ";
+    cout << sauce << " ";
+    cout << cheese << " ";
+    cout << "pizza";
+}
+
+void bakePizza(string bread, string sauce, string cheese, string topping) {
+
+    cout << "Here is your ";
+    cout << bread << " ";
+    cout << sauce << " ";
+    cout << cheese << " ";
+    cout << topping << " ";
+    cout << "pizza";
+}
 
 int main()
 {
-    // functions
+    string bread = "thicc crust";
+    string sauce = "marinara";
+    string cheese = "mozzerella";
+    string topping = "pepperoni";
 
-    double number1, number2;
-
-    cout << "Enter in #1 : ";
-    cin >> number1;
-    cout << "Enter in #2 : ";
-    cin >> number2;
-
-    double result = add(number1, number2);
-
-    cout << "Your result is: " << result << endl;
-    //cout << add(number1, number2);
+    bakePizza(bread);
+    bakePizza(bread, sauce, cheese, topping);
 
     cout << endl;
     return 0;
-}
-
-double add(double num1, double num2) {
-    double result = num1 + num2;
-    return result;
-    //return num1 + num2;
 }
