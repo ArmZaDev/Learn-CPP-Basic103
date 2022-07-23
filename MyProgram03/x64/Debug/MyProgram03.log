@@ -1,3 +1,2 @@
 ﻿  MyProgram03.cpp
-C:\Learn C and C++\CPP\MyProgram03\MyProgram03\MyProgram03.cpp(16,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   MyProgram03.vcxproj -> C:\Learn C and C++\CPP\MyProgram03\x64\Debug\MyProgram03.exe
