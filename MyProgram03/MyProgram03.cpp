@@ -8,42 +8,43 @@ public:
     string name;
     int age;
     double weight;
+    Human(string name, int age, double weight) {
 
-    void eat() {
-        cout << this->name << " is eating" << endl;
-    }
-    void drink() {
-        cout << this->name << " is drinking" << endl;
-    }
-    void sleep() {
-        cout << this->name << " is sleping" << endl;
+        this->name = name;
+        this->age = age;
+        this->weight = weight;
+
     }
 
+    //Human(string name, int age, double weight);
+    
 };
+
+/*
+//scope resolution :: operator
+Human::Human(string name, int age, double weight) {
+
+    this->name = name;
+    this->age = age;
+    this->weight = weight;
+}
+*/
+
+
 
 int main()
 {
-    Human human1;
-    Human human2;
-    Human human3;
+    // constructors = special function that is automatically called when an object is instantiated
+    //useful for assigning argument to variables
 
-    human1.name = "Tommy";
-    human1.age = 35;
-
-    human2.name = "Morty";
-    human2.age = 16;
-
-    human3.name = "Jerry";
-    human3.age = 45;
-
-    human1.eat();
-    human2.drink();
-    human3.sleep();
+    Human human1("Tommy", 35, 60);
+    Human human2("Morty", 16, 80);
 
     cout << human1.name << endl;
-    cout << human1.age << endl;
-    
-    
+    cout << human1.age << " yo" << endl;
+    cout << human1.weight << " kgs" << endl;
+
+
     cout << endl;
     return 0;
 }
