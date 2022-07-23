@@ -1,51 +1,56 @@
 ﻿#include <iostream>
 #include <string>
 #include <algorithm>
+#include <stdlib.h> //srand, rand
+#include <time.h> //time
 using namespace std;
-
-void bakePizza(string bread) {
-
-    cout << "Here is your ";
-    cout << bread << " ";
-    cout << "pizza";
-}
-
-void bakePizza(string bread, string sauce) {
-
-    cout << "Here is your ";
-    cout << bread << " ";
-    cout << sauce << " ";
-    cout << "pizza";
-}
-
-void bakePizza(string bread, string sauce, string cheese) {
-
-    cout << "Here is your ";
-    cout << bread << " ";
-    cout << sauce << " ";
-    cout << cheese << " ";
-    cout << "pizza";
-}
-
-void bakePizza(string bread, string sauce, string cheese, string topping) {
-
-    cout << "Here is your ";
-    cout << bread << " ";
-    cout << sauce << " ";
-    cout << cheese << " ";
-    cout << topping << " ";
-    cout << "pizza";
-}
 
 int main()
 {
-    string bread = "thicc crust";
-    string sauce = "marinara";
-    string cheese = "mozzerella";
-    string topping = "pepperoni";
+    //pseudo-random numbers
 
-    bakePizza(bread);
-    bakePizza(bread, sauce, cheese, topping);
+    int number;
+    int response;
+    int score = 0;
+
+    srand(time(NULL));
+
+    //high = 10, low = 1 => 1-10
+    number = rand() % 10 + 1; 
+
+    do {
+        cout << "Entr your guess (1-10): ";
+        cin >> response;
+
+        if (response > number) {
+            cout << "That was too high!\n";
+        }
+        else if (response < number) {
+            cout << "that was too low!\n";
+        }
+        else {
+            cout << "That was correct!\n";
+        }
+        score++;
+
+    } while (number != response);
+
+    cout << "\nNumber is: " << number;
+    cout << "\nguesses: " << score;
+
+
+
+    /*
+    srand(time(NULL));
+
+    int number = rand() % 10 + 1;
+    int number1 = rand() % 10 + 1;
+    int number2 = rand() % 10 + 1;
+
+    cout << number << " " << number1 << " " << number2 << " ";*/
+   
+
+    
 
     cout << endl;
     return 0;
